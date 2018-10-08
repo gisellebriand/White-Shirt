@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	<!--<script src="class.js"></script>-->
+
+    <title>White Shirt</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Theme CSS -->
+    <link href="css/agency.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <button  type="button"><h2><font><b><a class="navbar-brand page-scroll" href="http://whiteshirt.net23.net">WHITE SHIRT</a></b></font></h2></button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#services">Brands</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">About</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#team">Team</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="intro-text">
+       
+                <div class="intro-heading">Start shopping here</div>
+				<h4 class="sub-heading"> SELECT YOUR BRANDS BELOW</h4>
+				<br>
+			<div class="row">
+ <div class="form-group">
+    <div  class="input-group" >
+      <input id="input" type="text" class="form-control" placeholder="Search for..." onkeydown = "return processKey(event)"/>
+	   <span class="input-group-btn">
+	   <button id="foobar" class="btn btn-primary" type="button" onclick="showResult()">Go!</button>
+      
+       
+      </span>
+    </div>
+<div id="d1" style="display:inline"></div>
+<div id="d2" style="display:inline"></div>
+<div id="d3" style="width:30%"></div>
+
+	<script>
+		function showResult() {
+			
+			localStorage.query = document.getElementById("input").value;
+			localStorage.theory = document.getElementById("theorycb").checked;
+			localStorage.urban = document.getElementById("urbancb").checked;
+			localStorage.free = document.getElementById("freecb").checked;
+			localStorage.vine = document.getElementById("vvcb").checked;
+			localStorage.f21 = document.getElementById("f21cb").checked;
+			localStorage.rag = document.getElementById("rbcb").checked;
+			localStorage.banana = document.getElementById("brcb").checked;
+			//localStorage.theory2 = document.getElementById("theory2cb").selected;
+			
+
+			
+
+			
+			window.open("resultscode.html");
+			//nextPage();
+			
+			
+			}
+		function processKey(e){
+			if (null == e)
+				e = window.event;
+			if (e.keyCode == 13){
+				document.getElementById("foobar").click();
+				return false;
+			}
+		}
+		
+	
+	</script>
+	<!-- /input-group -->
+  </div><!-- /.col-lg-6 -->
+</div><!-- /.row -->
+        </div>
+    </header>
+
+    <!-- Brands Section -->
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Brands</h2>
+                    <h3 class="section-subheading text-muted">Pick to compare price and product between two of the following brands.</h3>
+                </div>
+            </div>
+            <div class="row text-center">
+
+                <div class="col-md-2" style="margin-right:60px">
+                    <span class="fa-stack fa-4x">
+		<label class="checkbox-inline"><input type="checkbox" value=""><img HEIGHT="150" WIDTH="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/zara1_zpslhaz7b9x.gif" border="0" alt="zara photo zara1_zpslhaz7b9x.gif"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p class="text-muted" id="coming"> COMING SOON!  </p>
+                </div>
+
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="theorycb" type="checkbox" value=""><img  height="150" width="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/theory1_zpstbznzb36.gif" border="0" alt=" photo theory1_zpstbznzb36.gif"></label>
+                    </span>
+                    <h4 class="service-heading"></h4> 
+					<br>
+					<br>
+                    <p id="coming2" class="text-muted"> Theory is a New York-based clothing brand for men and women, whose clothing expresses 
+					a style of class and modernity.</p>
+                </div>
+
+                <div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="urbancb" type="checkbox" value=""><img height="150" width="150"  src="http://i349.photobucket.com/albums/q397/whiteshirtimages/urban_zpsroxzqmxc.jpg"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p id="coming2" class="text-muted"> Urban Outfitters is an American men and women clothing brand with a style combination
+					of bohemian, hipster, and vintage apparel. </p>
+                </div>
+
+				<div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="freecb" type="checkbox" value=""><img height="150" width="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/freepeople_zpsb6hutarm.gif" border="0" alt=" photo freepeople_zpsb6hutarm.gif"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p id="coming2" class="text-muted"> Free People is a bohemian-style clothing brand for women whose clothing carries a light and summery aesthetic 
+					for casual wear. </p>
+                </div>
+
+				<div class="col-md-2" style="margin-right:60px">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="vvcb" type="checkbox" value=""><img height="150" width="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/vineyardvines_zpsyl5mikjj.gif" border="0" alt="vine photo vineyardvines_zpsyl5mikjj.gif"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p class="text-muted" style="width:120%;margin-left:20px"> Vineyard Vines is a laid-back, colorful, and preppy style for men, women, and children. </p>
+                </div>
+
+				<div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="f21cb" type="checkbox" value=""><img height="150" width="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/forever_zps2ujqyzir.jpg" border="0" alt=" photo forever_zps2ujqyzir.jpg"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p id="coming2" class="text-muted"> Forever 21 is a youthful, all-around American brand for men and women, whose clothing ranges from casual to sportive to
+					fancy.</p>
+                </div>
+
+				<div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="rbcb" type="checkbox" value=""><img height="150" width="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/ragbone_zpsaghyg0lp.gif" border="0" alt=" photo ragbone_zpsaghyg0lp.gif"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p id="coming2" class="text-muted">Rag&bone's clothing style is sleek and simple for the average man and woman, with a presence of class
+					and sophistication.</p>
+                </div>
+				<div class="col-md-3">
+                    <span class="fa-stack fa-4x">
+						<label class="checkbox-inline"><input id="brcb" type="checkbox" value=""><img height="150" width="150" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/banana_zpshaefpwyf.gif" border="0" alt=" photo banana_zpshaefpwyf.gif"></label>
+                    </span>
+                    <h4 class="service-heading"></h4>
+					<br>
+					<br>
+                    <p id="coming2" class="text-muted"> Banana Republic is a brand with business and casual attire clothing for an older age group, filled with colors
+					and elegance.</p>
+                </div>
+            </div>
+        </div>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">Learn more about who we are.</h3>
+					<h4 class="text-muted"> <p id="big">Online shopping can often be a tedious and frustrating routine. 
+					Comparing prices and products takes time and usually results in several open tabs in your browser. 
+					In an attempt to alleviate the irritation and time-consumption of online shopping, we created a webpage 
+					that shows side-by-side comparisons of search results. White Shirt is a website that cross 
+					references online stores based on keyword searches, and displays the results of the selected stores cheek by jowl 
+					for efficiency, in hopes of making any online shopping experience an enjoyable one. </p></h4>
+                </div>
+            </div>
+			<br>
+			<br>
+            <br>
+            <br>
+            <br>
+
+    <!-- Team Section -->
+    <section id="team" class="bg-light-gray">
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Meet the creators of White Shirt!</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img HEIGHT="300" width="250" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/grace2_zpsxvqulkny.png" border="0" alt=" photo grace2_zpsxvqulkny.png" class="img-responsive img-circle" alt="">
+                        <h4>Grace Haughton</h4>
+                        <p class="text-muted">Lead Designer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href=""><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img HEIGHT="250" width="250" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/lucia_zpsurfgjyip.jpg" border="0" alt=" photo lucia_zpsurfgjyip.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Lucia Villalonga</h4>
+                        <p class="text-muted">Lead Marketer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/lovelucia7"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="team-member">
+                        <img HEIGHT="250" width="250" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/giselle_zps2fl8jirz.jpg" border="0" alt=" photo giselle_zps2fl8jirz.jpg" class="img-responsive img-circle" alt="">
+                        <h4>Giselle Briand</h4>
+                        <p class="text-muted">Lead Developer</p>
+                        <ul class="list-inline social-buttons">
+                            <li><a href="https://twitter.com/GiselleBriand"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/gisellebriand"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; WHITE SHIRT 2016</span>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright"> whiteshirt2017@gmail.com 
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <span class="copyright" >
+                    </span>
+                </div>
+                <img id="logo" height="50" width="50" src="http://i349.photobucket.com/albums/q397/whiteshirtimages/Logomakr_0UdgNE-2_zpsoe9p1raq.png" border="0" alt=" photo Logomakr_0UdgNE-2_zpsoe9p1raq.png">
+            </div>
+        
+       </div >
+       
+    </footer>
+    <script type="text/javascript">
+  var vglnk = { key: '7b8319b7b247a51cbe7d2efb1fe39d3f' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = '//cdn.viglink.com/api/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-86098601-1', 'auto');
+  ga('send', 'pageview');
+
+    </script>
+    </body>
+
+
+</html>
+    
+   
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
